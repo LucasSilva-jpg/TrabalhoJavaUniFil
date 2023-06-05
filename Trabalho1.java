@@ -6,9 +6,11 @@ public class Trabalho1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int tamanho, operacao = 1;
+        String nome;
 
-
-        System.out.println("\n[ Seja bem vindo! ]\nInsira a quantidade de índices do vetor:");
+        System.out.println("\nOlá, como é seu nome?: ");
+        nome = scanner.nextLine();
+        System.out.println("\n[ Seja bem vindo(a) " + nome +"! ]\nInsira a quantidade de índices do vetor:");
             tamanho = scanner.nextInt();
             scanner.nextLine();
 
@@ -108,6 +110,6 @@ public class Trabalho1 {
             }
         }
         while (operacao != 5);
-        System.out.println("Trabalho feito por: \nLucas Vinicius.\nVictória Rezende.\nMuito obrigado por testar!");
+        System.out.println("\nTrabalho feito por: \nLucas Vinicius.\nVictória Rezende.\nMuito obrigado(a) por testar " + nome +"!");
     }
 }
